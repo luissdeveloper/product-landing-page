@@ -68,6 +68,13 @@ p{
     height: 3rem;
 }
 
+.header-fixed{
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1000;
+}
+
 /*START - HEADER*/
 
 header{
