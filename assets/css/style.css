@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/*Variables*/
+:root{
+    --fuenteGeneral: 'Poppins', sans-serif;
+
+    --black: #000000;
+    --blueDark: #0F2C67;
+    --red: #CD1818;
+    --blueLight: #0A81AB;
+    --white: #fff;
+    --orange: #F3950D;
+    --yellow: #F4E185;
+}
+
+/*Globales*/
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,:before,:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteGeneral);
+    font-size: 1.6rem;
+    background-image: linear-gradient( 45deb, #F4F9F9, #E4FBFF);
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-control{
+    width: 100%;
+    border-radius: 3px;
+    height: 3rem;
+}
+
+/*START - HEADER*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blueDark);
+}
+
+#header-img{
+    width: 12.8rem;
+    margin: 0 auto;
+}
+
+#nav-bar{
+    display: flex;
+    justify-content: center;
+    background: hsl(220.2,35%,50%);
+}
+
+#nav-bar li{
+    list-style: none;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+}
+
+#nav-bar li:hover{
+    background: hsl(220.2,35%,60%);  
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/*END - HEADER*/
+
+#banner img{
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+/*START - SERVICIOS*/
+
+#servicios{
+    
+}
+
+#servicios > .servicios-title{
+    text-align: center;
+}
+
+#servicios > ul{
+    padding: 0;
+}
+
+#servicios > ul > li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.item-description > h3, .item-description p{
+    margin: 0.5rem;
+    padding: 0;
+}
+
+svg{
+    color: var(--orange);
+}
+
+/*END - SERVICIOS*/
+
+/*START - VIDEO*/
+
+#video{
+    width: 100%;
+    height: auto;
+}
+
+/*END - VIDEO*/
+
+/*START - CONTACTO*/
+
+#contacto{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 5rem 2.5rem;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+#email{
+    margin: 1rem 0;
+}
+
+#email:hover{
+    border-color: var(--blueLight);
+}
+
+#submit{
+    width: 100px;
+    margin: 0 auto;
+    background-color: var(--blueLight);
+    color: var(--white);
+    border:none;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+
+#submit:hover{
+    transition: 0.5s;
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+}
+
+/*END - CONTACTO*/
+
+/*START - PRECIOS*/
+
+#precios{
+    padding: 3rem;
+    margin: 2.5rem 0;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+#precios li{
+    font-size: 2.2rem;
+}
+
+#precios h3{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#precios .item-price{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.plan-bronce,.plan-plata,.plan-platino{
+    padding: 1rem;
+    margin: 1rem 0;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.plan-bronce{
+    background: rgb(228, 138, 13,0.9);
+}
+
+.plan-plata{
+    background: rgba(15, 44, 103, 0.8);
+}
+
+.plan-platino{
+    background: rgba(205, 24, 24, 0.8);
+}
+
+/*END - PRECIOS*/
+
+/*START - FOOTER*/
+
+#footer{
+    background-color: var(--black);
+    color: var(--white);
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+}
+
+#footer p{
+    margin: 1rem 0;
+}
+
+#footer span{
+    font-weight: 600;
+}
+
+
+/*END - FOOTER*/
+
