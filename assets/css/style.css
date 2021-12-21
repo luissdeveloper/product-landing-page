@@ -81,6 +81,10 @@ header{
     display: flex;
     flex-direction: column;
     background-color: var(--blueDark);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 #header-img{
@@ -137,6 +141,16 @@ header{
     margin: 0 auto;
 }
 
+.item-description{
+    margin: 1rem 0;
+}
+
+@media(min-width:768px){
+    .item-description{
+        margin: 0;
+    }
+}
+
 .item-description > h3, .item-description p{
     margin: 0.5rem;
     padding: 0;
@@ -144,6 +158,23 @@ header{
 
 svg{
     color: var(--orange);
+}
+
+
+@media(min-width:768px){
+    #servicios ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    #servicios > ul > li{
+      margin: 1rem;
+      background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      padding: 1rem;
+    }
 }
 
 /*END - SERVICIOS*/
@@ -155,12 +186,25 @@ svg{
     height: auto;
 }
 
+@media(min-width:768px){
+    .video-div{
+        display: flex;
+        justify-content: center;
+    }
+
+    #video{
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+}
+
 /*END - VIDEO*/
 
 /*START - CONTACTO*/
 
 #contacto{
-    margin-top: 5rem;
+    margin-top: 20rem;
     margin-bottom: 5rem;
     padding: 5rem 2.5rem;
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
@@ -236,6 +280,35 @@ svg{
 
 .plan-platino{
     background: rgba(205, 24, 24, 0.8);
+}
+
+@media(min-width:768px){
+    #precios{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 4fr;
+        column-gap: 1rem;
+    }
+
+    #precios h2{
+        grid-column:1/4;
+        grid-row: 1/2;
+    }
+
+    #precios .plan-bronce{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #precios .plan-plata{
+        grid-column: 2/3;
+        grid-row:2/3;
+    }
+
+    #precios .plan-platino{
+        grid-column: 3/4;
+        grid-row:2/3;
+    }
 }
 
 /*END - PRECIOS*/
